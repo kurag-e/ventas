@@ -3,6 +3,7 @@ package com.perfulandia.ventas.models;
 import jakarta.persistence.*;
 import lombok.Data;
 
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -20,3 +21,4 @@ public class Ventas {
     private Double total;
     private LocalDateTime fechaVenta;
 }
+ 
