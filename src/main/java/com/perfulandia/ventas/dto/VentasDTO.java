@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 @Data
 public class VentasDTO {
     private Integer id;
-    private Integer clienteId;
+    private Integer Id_cliente;
     private Integer productoId;
     private Integer cantidad;
     private Double total;
