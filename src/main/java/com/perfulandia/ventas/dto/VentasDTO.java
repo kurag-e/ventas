@@ -1,14 +1,16 @@
 package com.perfulandia.ventas.dto;
 
 import org.springframework.hateoas.RepresentationModel;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class VentasDTO extends RepresentationModel<VentasDTO> {
     private Integer id;
-    private Integer Id_cliente;
+    private Integer idCliente;
     private Integer productoId;
     private Integer cantidad;
     private Double total;

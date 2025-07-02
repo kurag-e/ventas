@@ -36,7 +36,7 @@ public class VentasServices {
 
     public Optional<VentasDTO> actualizar(Long id, VentasDTO dto) {
         return repository.findById(id).map(venta -> {
-            venta.setId_cliente(dto.getId_cliente());
+            venta.setId_cliente(dto.getIdCliente());
             venta.setProductoId(dto.getProductoId());
             venta.setCantidad(dto.getCantidad());
             venta.setTotal(dto.getTotal());
@@ -56,7 +56,7 @@ public class VentasServices {
     private VentasDTO toDTO(Ventas venta) {
         VentasDTO dto = new VentasDTO();
         dto.setId(venta.getId());
-        dto.setId_cliente(venta.getId_cliente());
+        dto.setIdCliente(venta.getId_cliente());
         dto.setProductoId(venta.getProductoId());
         dto.setCantidad(venta.getCantidad());
         dto.setTotal(venta.getTotal());
@@ -67,7 +67,7 @@ public class VentasServices {
     private Ventas toEntity(VentasDTO dto) {
         Ventas venta = new Ventas();
         venta.setId(dto.getId());
-        venta.setId_cliente(dto.getId_cliente());
+        venta.setId_cliente(dto.getIdCliente());
         venta.setProductoId(dto.getProductoId());
         venta.setCantidad(dto.getCantidad());
         venta.setTotal(dto.getTotal());
