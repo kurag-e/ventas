@@ -3,6 +3,7 @@ package com.perfulandia.ventas.models;
 import jakarta.persistence.*;
 import lombok.Data;
 
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -14,9 +15,12 @@ public class Ventas {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private Integer clienteId;
+    @ManyToOne
+    @JoinColumn(name = "id_cliente")
+    private Integer Id_cliente;
     private Integer productoId;
     private Integer cantidad;
     private Double total;
     private LocalDateTime fechaVenta;
 }
+ 
