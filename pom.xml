@@ -12,7 +12,7 @@
     </parent>
 
     <groupId>com.perfulandia</groupId>
-    <artifactId>soporteticket</artifactId>
+    <artifactId>ventas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ventas</name>
     <description>a</description>
